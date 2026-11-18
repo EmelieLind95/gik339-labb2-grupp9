@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id ="titel">Labb grupp9</title>
-    
-    <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="titel">Labb grupp9</title>
 
-        /*
+    <style>
+      /*
             css som påverkar de olika id, classer. 
             # är för id
             . class. 
@@ -16,93 +15,88 @@
              Har ställt ledande frågor om, är det inte flex man ska använda här, men fått svar, att det är väl bättre med grid.
             Så det har använts för att fräscha upp HTML och css kunskaperna. 
         */
-        body{
-            background-color: rgb(252, 224, 140);
-            font-size: large;
-            font-weight: 800;
-            color:rgb(167, 41, 56);
-        } 
+      body {
+        background-color: rgb(252, 224, 140);
+        font-size: large;
+        font-weight: 800;
+        color: rgb(167, 41, 56);
+      }
 
-        #heading1{
-            text-align: center;
-            margin-top: 150px;
-        }        
-        .container{
-            display:grid;
-            grid-template-columns: 200px 1fr;  /* kolumn 1: labels, kolumn 2: inputs */
-            gap: 10px;
-            background-color: rgb(167, 41, 56);
-            color:rgb(252, 224, 140);
-            width: 500px;
-            padding:50px;
-            margin: auto;
-            border-radius: 10px;
-                       
-        }
+      #heading1 {
+        text-align: center;
+        margin-top: 150px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 200px 1fr; /* kolumn 1: labels, kolumn 2: inputs */
+        gap: 10px;
+        background-color: rgb(167, 41, 56);
+        color: rgb(252, 224, 140);
+        width: 500px;
+        padding: 50px;
+        margin: auto;
+        border-radius: 10px;
+      }
 
-        .textfield{
-            border: 1px solid black;
-            background-color: rgb(255, 241, 141);
-        }
+      .textfield {
+        border: 1px solid black;
+        background-color: rgb(255, 241, 141);
+      }
 
-        #divStyle{
-             justify-self: start;
-        }
-            
-        #divElement{
-            grid-column: 1 / -1;
-            border: 1px solid black;
-            padding:10px;
-            background-color: rgb(252, 224, 140);
-            color:rgb(167, 41, 56);
-            margin-top: 10px;
-        } 
+      #divStyle {
+        justify-self: start;
+      }
 
-        #buttonElement{
-            background-color: rgb(252, 224, 140);
-            color:rgb(167, 41, 56);
-            font-size: large;
-            border: none;
-            border-radius: 50px;
-            padding: 5px;
-            width: 100px;
-            text-align: center;
-            display: inline-block;
-            cursor: pointer;
-        } 
-        #buttonElement:hover {
-            background-color: #4CAF50; /* Green */
-            color: white;
-            }
-           
+      #divElement {
+        grid-column: 1 / -1;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: rgb(252, 224, 140);
+        color: rgb(167, 41, 56);
+        margin-top: 10px;
+      }
+
+      #buttonElement {
+        background-color: rgb(252, 224, 140);
+        color: rgb(167, 41, 56);
+        font-size: large;
+        border: none;
+        border-radius: 50px;
+        padding: 5px;
+        width: 100px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+      }
+      #buttonElement:hover {
+        background-color: #4caf50; /* Green */
+        color: white;
+      }
     </style>
-</head>
-<body>
-
-     <!-- Här har jag gett de olika elementen ett id -->
+  </head>
+  <body>
+    <!-- Här har jag gett de olika elementen ett id -->
     <h1 id="heading1">Labb2 - grupp 9</h1>
     <!-- <h2 id ="heading2"> Labb 2 för kursen Dynamiska webbapplikationer</h2> -->
 
     <!-- <p id ="text">Här ska vi senare fylla på med lite text</p> -->
-     <!-- Här skapade jag en div class med namnet container. Det var för att jag skulle "gruppera" det som skedde i input delen. Det är ju en container
+    <!-- Här skapade jag en div class med namnet container. Det var för att jag skulle "gruppera" det som skedde i input delen. Det är ju en container
            Sedan har jag lagt in id, namn class enligt uppgiften. -->
-    <div class ="container">
-    <label for ="color">Färg</label> 
-    <input type ="text" id ="color" name ="color" class = "textfield">
-    
-    <label for ="content">Innehåll</label>
-    <input type ="text" id = "content" name ="content" class = "textfield">
-    
-    <label for ="divStyle">Stil på box</label>
-    <input type ="checkbox" id = "divStyle" name ="divStyle" class = "checkbox">
-    <button id = "buttonElement">Ångra</button>
-    <div id = "divElement">Div som egentligen ska vara tom</div>
-   
-    <!-- <button onclick="alert('Hej')">Ångra</button> -->
+    <div class="container">
+      <label for="color">Färg</label>
+      <input type="text" id="color" name="color" class="textfield" />
+
+      <label for="content">Innehåll</label>
+      <input type="text" id="content" name="content" class="textfield" />
+
+      <label for="divStyle">Stil på box</label>
+      <input type="checkbox" id="divStyle" name="divStyle" class="checkbox" />
+      <button id="buttonElement">Ångra</button>
+      <div id="divElement">Div som egentligen ska vara tom</div>
+
+      <!-- <button onclick="alert('Hej')">Ångra</button> -->
     </div>
-    
 
-
-<script src ="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
