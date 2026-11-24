@@ -47,7 +47,7 @@
         justify-self: start;
       }
 
-      #divElement {
+      #emptyDiv {
         grid-column: 1 / -1;
         border: 1px solid black;
         padding: 10px;
@@ -56,7 +56,7 @@
         margin-top: 10px;
       }
 
-      #buttonElement {
+      #regretButton {
         background-color: rgb(252, 224, 140);
         color: rgb(167, 41, 56);
         font-size: large;
@@ -68,7 +68,7 @@
         display: inline-block;
         cursor: pointer;
       }
-      #buttonElement:hover {
+      #regretButton:hover {
         background-color: #4caf50; /* Green */
         color: white;
       }
@@ -91,8 +91,8 @@
 
       <label for="divStyle">Stil på box</label>
       <input type="checkbox" id="divStyle" name="divStyle" class="checkbox" />
-      <button id="buttonElement">Ångra</button>
-      <div id="divElement">Div som egentligen ska vara tom</div>
+      <button id="regretButton">Ta bort</button>
+      <div id="emptyDiv">Div som egentligen ska vara tom</div>
 
       <!-- <button onclick="alert('Hej')">Ångra</button> -->
     </div>
