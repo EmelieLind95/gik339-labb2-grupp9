@@ -1,4 +1,3 @@
-
 /* Uppgift 4 */
 const checkboxElement = document.getElementById("divStyle");
 
@@ -8,29 +7,29 @@ const buttonElement = document.getElementById("regretButton");
 
 const divElement = document.getElementById("emptyDiv");
 
-
 /* Uppgift 5 */
+function handleInput(e) {
+  console.log(e.target);
 
-
-
-function handleInput(e){
-    
-    console.log (e.target.value);
-    
+  let textFieldId = e.target.id;
+  if (textFieldId === "content") {
+    let textFieldInput = e.target.value;
+    divElement.innerHTML = textFieldInput;
+  }
 }
 
 /* Uppgift 6 */
+checkboxElement.addEventListener("change", () => {
+  const colorInput = document.getElementById("color");
+  divElement.style.backgroundColor = colorInput.value;
+});
 
-// textfieldElement.addEventListener('input', (e) )
+//loopar igenom varje textfält
+for (const textElement of textfieldElement) {
+  textElement.addEventListener("input", handleInput);
+  console.log(textElement);
+}
+
 // buttonElement.addEventListener('click', () => {
 
-
-
 // } );
-
-checkboxElement.addEventListener('click', () =>{
-    
-
-}
-)
-
