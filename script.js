@@ -10,3 +10,27 @@ const divElement = document.getElementById("emptyDiv");
 
 
 /* Uppgift 5 */
+
+
+
+function handleInput(e){
+    
+    console.log (e.target.value);
+    
+}
+
+/* Uppgift 6 */
+
+// textfieldElement.addEventListener('input', (e) )
+// buttonElement.addEventListener('click', () => {
+
+
+
+// } );
+
+checkboxElement.addEventListener('click', () =>{
+    
+
+}
+)
+
