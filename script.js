@@ -9,7 +9,7 @@ const divElement = document.getElementById("emptyDiv");
 
 /* Uppgift 5 */
 function handleInput(e) {
-  console.log(e.target);
+  console.log(e.target.id);
 
   let textFieldId = e.target.id;
   if (textFieldId === "content") {
@@ -18,7 +18,9 @@ function handleInput(e) {
   }
 }
 
-/* Uppgift 6 */
+/*--- Uppgift 6 --- 
+Koppla eventlyssnare till textfälten, 
+checkboxen och knappen*/
 checkboxElement.addEventListener("change", () => {
   const colorInput = document.getElementById("color");
   divElement.style.backgroundColor = colorInput.value;
@@ -27,9 +29,10 @@ checkboxElement.addEventListener("change", () => {
 //loopar igenom varje textfält
 for (const textElement of textfieldElement) {
   textElement.addEventListener("input", handleInput);
-  console.log(textElement);
+  //console.log(textElement);
 }
 
-// buttonElement.addEventListener('click', () => {
-
-// } );
+//tar bort divElement när man klickar på knappen.
+buttonElement.addEventListener("click", () => {
+  divElement.remove();
+});
