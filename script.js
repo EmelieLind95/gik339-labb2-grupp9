@@ -29,7 +29,7 @@ checkboxElement.addEventListener("change", () => {
 //loopar igenom varje textfält
 for (const textElement of textfieldElement) {
   textElement.addEventListener("input", handleInput);
-  //console.log(textElement);
+  
 }
 
 //tar bort divElement när man klickar på knappen.
