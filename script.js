@@ -9,7 +9,7 @@ const divElement = document.getElementById("emptyDiv");
 
 /* Uppgift 5 */
 function handleInput(e) {
-  console.log(e.target.id);
+  console.log(e.target);
 
   let textFieldId = e.target.id;
   if (textFieldId === "content") {
