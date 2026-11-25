@@ -26,13 +26,12 @@ checkboxElement.addEventListener("change", () => {
   divElement.style.backgroundColor = colorInput.value;
 });
 
-//loopar igenom varje textfält
+/*loopar igenom varje textfält*/
 for (const textElement of textfieldElement) {
   textElement.addEventListener("input", handleInput);
-  
 }
 
-//tar bort divElement när man klickar på knappen.
+/*tar bort divElement när man klickar på knappen.*/
 buttonElement.addEventListener("click", () => {
   divElement.remove();
 });
